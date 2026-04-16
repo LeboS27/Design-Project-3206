@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx expo:*)",
+      "Bash(kill %1)",
+      "Bash(node -e \"const pkg = require\\('./package.json'\\); console.log\\('Packages:', Object.keys\\(pkg.dependencies\\).join\\(', '\\)\\)\")",
+      "Bash(cmd /c \"rmdir /s /q node_modules\")",
+      "Bash(powershell -Command \"Remove-Item -Recurse -Force node_modules -ErrorAction SilentlyContinue; Remove-Item -Force package-lock.json -ErrorAction SilentlyContinue; Write-Host 'DONE'\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('Expo version:', d.get\\('version','?'\\)\\)\")",
+      "Bash(node -e \"require\\('/c/Users/TechCharities/Documents/final_project/SolarPVApp/node_modules/@expo/cli/build/bin/cli'\\)\")",
+      "Bash(node \"/c/Users/TechCharities/Documents/final_project/SolarPVApp/node_modules/@expo/cli/build/bin/cli\" --version)",
+      "Bash(node_modules/.bin/expo start:*)",
+      "Read(//c/Users/TechCharities/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/b7967a4c-eac6-4bfc-927c-93f56e8a0607/ec1e2298-635a-465d-9b4c-ff9546f4e2b5/skills/docx/**)",
+      "Bash(npm list:*)",
+      "Bash(node -e \"require\\('docx'\\); console.log\\('docx ready'\\)\")",
+      "Bash(node -e \"require\\('docx'\\); console.log\\('docx OK'\\)\")",
+      "Bash(mkdir -p \"/c/Users/TechCharities/Documents/final_project/docgen\")",
+      "Bash(npm init:*)",
+      "Bash(node generate.js)",
+      "Bash(node create-assets.js)",
+      "Bash(PowerShell -Command \"Remove-Item -Recurse -Force node_modules, package-lock.json -ErrorAction SilentlyContinue; Write-Host 'Cleaned'\")",
+      "Bash(node -e \"const p=require\\('./node_modules/expo/package.json'\\); console.log\\('expo version:', p.version\\)\")",
+      "Bash(node -e \"const p=require\\('./node_modules/expo/package.json'\\); console.log\\('Expo:', p.version\\); const rn=require\\('./node_modules/react-native/package.json'\\); console.log\\('RN:', rn.version\\)\")",
+      "Bash(node -e \"const r=require\\('./node_modules/react-native-reanimated'\\); const apis=['FadeInDown','FadeInRight','withSpring','withTiming','useAnimatedStyle','useSharedValue','interpolateColor','Easing','withRepeat']; apis.forEach\\(api => console.log\\(api+':', typeof r[api]\\)\\)\")",
+      "Bash(grep -l \"FadeInDown\\\\|FadeInRight\\\\|withSpring\\\\|useAnimatedStyle\" /c/Users/TechCharities/Documents/final_project/SolarPVApp/node_modules/react-native-reanimated/src/*.ts)",
+      "Bash(ls /c/Users/TechCharities/Documents/final_project/SolarPVApp/node_modules/react-native-reanimated/plugin*)",
+      "Bash(node -e \"['expo','react-native','react-native-reanimated','react-native-svg','expo-linear-gradient'].forEach\\(p => { try { console.log\\(p+':', require\\('./node_modules/'+p+'/package.json'\\).version\\) } catch\\(e\\) { console.log\\(p+': NOT FOUND'\\) } }\\)\")",
+      "Bash(npx tsc:*)",
+      "Bash(node -e \"const p=require\\('./node_modules/react-native-worklets/package.json'\\); console.log\\('worklets version:', p.version\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('peers:', json.dumps\\(d.get\\('peerDependencies',{}\\), indent=2\\)\\)\")"
+    ]
+  }
+}
